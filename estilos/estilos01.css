@@ -1,0 +1,402 @@
+body{
+    margin: 0px;
+}
+
+.header img{
+    display: inline-block;
+    max-width: 100%;
+
+}
+
+@font-face {
+    font-family: 'Bangers Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('Bangers Regular'), 
+        url(fonts/BangersRegular.woff2) format('woff2'),
+        url(fonts/BangersRegular.woff) format('woff'),
+        url(fonts/BangersRegular.ttf) format('truetype'),
+        url(fonts/BangersRegular.otf) format('opentype'),
+        url(fonts/BangersRegular.eot) format('embedded-opentype');
+        }
+
+.demo{
+    font-family:"Bangers Regular" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.demo1{
+    background-color: white;
+    animation: move01 3s;
+}
+
+@keyframes move01 {
+    0%{left: 0px;}
+    50%{left: 150px;}
+    100%{left:0px;}
+}
+
+main{
+    position: relative;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    margin: 0%;
+    padding: 0%;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+
+.menu a{
+    background-color:green;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.menu >li>ul>li>a{
+    background-color: green;
+    border: 1px solid green;
+}
+
+.menu li a:hover{
+    background-color: rgb(12, 201, 59);
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+h3{
+    font-family: 'Shadows Into Light', cursive;
+}
+.menu > div:hover{
+    background-color: red;
+}
+
+.Navegacion{
+    border: 3px solid blue;
+    background-color: #ffff;
+    border-radius: 10px;
+    width: 13%;
+    height: 300px;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 3px solid green;
+}
+
+.contenido > div{
+    background-color: rgba(227, 197, 156, 0.5);
+    color: black;
+}
+
+#lista{
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: white;
+}
+
+#lista ul{
+    list-style-type: none;
+
+    padding-left: 0px;
+
+}
+
+.categoria1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    color: green;
+    border-radius: 10px;
+    text-align: left;
+    margin: 3px;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(2, 0, 0, 0.15), 0 1px 2px rgba(5, 0, 0, 0.30)
+}
+.categoria1 > li{
+    list-style: none;
+}
+.usuario > form{
+    color: #167d09;
+}
+
+.categoria2 > li > a{
+    text-align: left;
+    padding: 0px 30px 0px 5px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    margin: 3px;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(2, 0, 0, 0.15), 0 1px 2px rgba(5, 0, 0, 0.30)
+}
+
+.categoria2 > li >a:hover{
+    background-color: white;
+    color: green;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+}
+
+.wsp > h2 >a:hover{
+    color: white;
+}
+.wsp >h2 >a{
+    color: white;
+}
+
+#content{
+    grid-column: 2/5;
+    grid-row: 1/3;
+    padding: 10px;
+    background-color: white;
+}
+
+#content .face>.face-negosel:visited{
+    color: green;
+}
+
+#content a > h2{
+    margin: 0px;
+}
+.face{
+    
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+    padding: 0px 0px 0px 250px;
+}
+.face a{
+    text-decoration: none;
+    color: #167d09;
+}
+.face > a:hover{
+    color: #d9480f;
+}
+
+.menu div>a:visited{
+    color: #fff;
+}
+
+.efecto-press > h3{
+    width: 200px;
+    background-color: green;
+    text-align: center;
+    transition: width 3s;
+}
+
+.efecto-press > h3:hover{
+    width: 300px;
+}
+
+p{
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.foto-producto{
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-producto img{
+    width: 300px;
+    height: 300px;
+    margin: 0px 60px;
+}
+
+figure.foto-producto-ofi{
+    border: thick green dashed; /*thin es un tipo de borde*/
+    margin: 10px;
+    max-width: 450px;
+    padding: 0px;
+
+}
+
+figure.foto-producto-ofi figcaption{
+    background-color: green;
+    color: #fff;
+    font-family: cursive;
+    padding: 3px;
+    text-align: center;
+}
+
+figure > img:hover{
+    transition: all 2s;
+}
+
+.sustitucion1{
+    content: url('../img/engrapador2.jpg');
+    max-width: 300px;
+}
+
+.sustitucion1:hover{
+    content: url('../img/engrapador1.jpg');
+    
+}
+
+.sustitucion2{
+    content: url('../img/perforador1.jpg');
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.sustitucion2:hover{
+    content: url('../img/perforador2.jpg');
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.zoom{
+    content: url('../img/ssd.jpg');
+    max-width: 300px;
+}
+
+.producto-zoom:hover .zoom{
+    transform: scale(4.5);
+}
+
+.producto-zoom{
+    overflow: hidden;
+}
+
+.tabla{
+    margin: 0px 20%;
+}
+
+.tabla h1{
+    margin: 0px;
+    text-align: center;
+}
+.tabla h3{
+    color: limegreen;
+    margin: 0px;
+    text-align: center;
+}
+.tabla p{
+    text-align: justify;
+}
+.tabla tr {
+    background-color: rgb(237, 237, 242);
+    border: 20px solid white;
+}
+.tabla th{
+    padding: 30px;
+}
+.nav-item{
+    padding: 0px 50px;
+}
+
+
+.footer{
+    background-color: #167d09;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 760px){
+    img{
+        max-width: 250px;
+    }
+    figure.foto-producto-ofi{
+        max-width: 320px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+
+    .face{
+        flex-direction: column;
+        padding: 0px 80px;
+    }
+    .mapa > iframe{
+        width: 100%;
+    }
+
+    iframe{
+        width: 80%;
+    }
+
+    video{
+        width: 80%;
+    }
+
+    .foto-producto{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1080px){
+    img{
+        max-width: 300px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+
+    .face{
+        flex-direction: column;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
+    iframe{
+        width: 80%;
+    }
+
+    video{
+        width: 80%;
+    }
+    .foto-producto{
+        flex-direction: column;
+    }
+    .categoria2 >li{
+        text-align: left;
+    }
+    .categoria2>li>a{
+        padding: 0px;
+    }
+}
+

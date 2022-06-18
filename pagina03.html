@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Sebastián Oliva Tang">
+    <meta name="copyright" content="Negocios de la selva">
+    <meta name="description" content="página web de productos que se vende en negosel">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="Keywords" content="negosel, negocios de la selva, productos, oficina, utiles escolares, papel, limpieza, comprar, cotizacion">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="estilos/estilos01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="img/portada4.png" alt="Logo">
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: white ;border-top: 3px solid green;border-right: 3px solid green;border-left: 3px solid green;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin: 0px;">
+                <img src="img/1594953865687.png"  alt="" width="60" height="60">
+              </a>
+          <a class="navbar-brand text-success" href="#">NEGOSEL</a>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu" style="margin: 0px 30px;">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="pagina01.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="pagina03.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Acerca de
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-white" href="#">Nuestra historia</a></li>
+                  <li><a class="dropdown-item text-white" href="pagina04.html">Nuestros valores</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Nuestras Tiendas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="pagina02.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+              <button class="btn btn-outline-success text-success bg-white" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <div>
+        <div class="contenido">
+            <div id="lista">
+                <nav class="categoria1">
+                    <h2>Categorías</h2>
+                    <li>
+                        <ul class="categoria2">
+                            <li><a href="pagina03.html" target="_blank">Útiles escolares</a></li>
+                            <li><a href="pagina03.html" target="_blank">Artículos de oficina</a></li>
+                            <li><a href="pagina03.html" target="_blank">Papeleria en general</a></li>
+                            <li><a href="pagina03.html" target="_blank">Aseo y limpieza</a></li>
+                        </ul>
+                    </li> 
+                </nav>  
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="usuario">
+                        <h3 style="text-align: center; color: green;">Mi cuenta</h3>
+                    <form action="login.php" method="post">
+                        <fieldset style="border: 2px solid green;padding: 0% 15%;">
+                        <legend style="float: none; font-size: 20px;width: 71%;">INGRESE SUS DATOS</legend>
+                        <label for="username">USUARIO:</label>
+                        <input type="text" id="username">
+                        <br><br>
+                        <label for="password">CONTRASEÑA:</label>
+                        <input type="password" id="password">
+                        <br><br>
+                        <input type="submit" value="Iniciar Sesión">
+                        <input type="reset">
+                        </fieldset>
+                    </form>
+                    </div>
+            </div>
+
+            <div id="content"> 
+                <h2><u>Productos</u></h2>
+                <h3>Novedades en nuestra pagina de facebook</h3>
+                <div class="foto-producto">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2FNegosel%2Fphotos%2Fa.203304278038306%2F298014801900586%2F%3Ftype%3D3%26av%3D110740630628005%26eav%3DAfZlUUAPpC16l0O3PUVqlb-I6G7wWO1ERQJ6m1wAaRnVg72a8MQmQoQXnbgDbP43VrU&show_text=true&width=500" width="500" height="497" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+
+                <hr>
+
+                <h2><u>Productos Disponibles</u></h2>
+
+                <div class="row foto-producto">
+                    <figure class="col foto-producto-ofi">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/1444386-1500-1500/image-f8bfac2bd2bc4440ba54c077646acf36.jpg?v=637494814011700000" 
+                        alt="producto imagen externa">
+                        <figcaption align="center">Cuaderno Standford Billabong</figcaption>
+                    </figure>
+                    <br>
+                    <figure class="col foto-producto-ofi">
+                        <img  src="https://educacion30.b-cdn.net/wp-content/uploads/2022/01/GUYUCOM.jpg" alt="producto imagen externa 2">
+                        <figcaption align="center">Cuaderno Smart Notebook</figcaption>
+                    </figure>
+                </div>
+                <div class="row foto-producto">
+                    <figure class="col foto-producto-ofi">
+                        <img class="sustitucion1" alt="engrapador">
+                        <figcaption align="center">Engrapador de metal Faber-Castell</figcaption>
+                    </figure>
+                    <br>
+                    <figure class="col foto-producto-ofi">
+                        <img class="sustitucion2" alt="perforador">
+                        <figcaption align="center">Perforador Artesco</figcaption>
+                    </figure>
+                </div>
+                <div class="row foto-producto">
+                    <figure class="col foto-producto-ofi">
+                        <img src="img/silicona-liquida-fc-250ml.jpg" alt="silicona">
+                        <figcaption align="center">Silicona Líquida FC 250ml</figcaption>
+                    </figure>
+                    <br>
+                    <figure class="col foto-producto-ofi producto-zoom">
+                        <img class="zoom" alt="plumon">
+                        <figcaption align="center">Plumones Multimark FC x 12</figcaption>
+                    </figure>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <h2>Derechos Reservados a: NEGOCIOS DE LA SELVA S.R.L.</h2>
+            <h2>E-mail: sebastiantk1@gmail.com</h2>
+            <h2>celular: 965964040</h2>
+            <h2>Dirección: Av. Grau # 1055</h2>
+        </div>
+    </footer>
+</body>
+</html>
